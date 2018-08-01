@@ -1,11 +1,530 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="UTF-8">
-    <title>主页</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>And-ZJ</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.eeyellow.Timeline.css"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
-<body>
-个人主页
+
+<body data-spy="scroll" class="forbid_user_select">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- 页面起始 -->
+
+<!--背景图片-->
+<img class="img-fluid" src="img/home_background.jpg" alt="背景图片" id="home_background_img">
+
+<!--顶部导航栏-->
+<div class="navbar navbar-expand-md fixed-top navbar-dark" id="navbar_top">
+  <a class="navbar-brand" href="#">And-ZJ</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon text-white"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#home">主页 <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link " href="#me">我</a>
+      <a class="nav-item nav-link " href="#work">工作</a>
+      <a class="nav-item nav-link " href="#show">展示</a>
+      <!--<a class="nav-item nav-link " href="#intent">意向</a>-->
+      <a class="nav-item nav-link " href="#contact">联系</a>
+    </div>
+  </div>
+</div>
+
+<!--home定位-->
+<div class="container" id="home"></div>
+
+<!--me定位-->
+<div class="container-fluid content_part" id="me">
+  <div class="container">
+    <div class="row content_part_head">
+      <div class="col-md-auto">
+        <span class="h2">&gt;&gt;&gt;&nbsp;</span><span class="h2">我</span>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!--个人头像-->
+      <div class="col-md-auto">
+        <div class="card me_card">
+          <img class="card-img-top" src="img/head_img.png" alt="头像图片">
+          <div class="card-body text-dark">
+            <h5 class="card-title">And-ZJ</h5>
+            <p class="card-text">
+            <span class="my_blockquote">
+              <span class="mb-0">The ideal of life is for ideal life.</span>
+              <span class="blockquote-footer"><cite title="名言出处">张闻天</cite></span>
+            </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--个人评价-->
+      <div class="col-md-auto">
+        <div class="me_card" id="me_evaluate">
+          <div class="rounded-circle circle decorate_circle"
+               style="background-color: rgba(253, 126, 20, 0.87);left: 16rem;top: 13rem;"></div>
+          <div class="rounded-circle circle decorate_circle"
+               style="background-color: rgba(255,241,50,0.67);width: 2rem;height: 2rem;left:5rem;top:16rem;"></div>
+          <div class="rounded-circle circle decorate_circle"
+               style="background-color: rgba(220,53,69,0.6);left:5rem;top:5rem;"></div>
+          <div class="rounded-circle circle decorate_circle"
+               style="background-color: rgba(25,116,48,0.4);left:15rem;top:17rem;"></div>
+          <div class="rounded-circle circle decorate_circle"
+               style="background-color: rgba(179,212,252,0.93);left:3rem;top:18rem;"></div>
+          <div class="rounded-circle circle evaluate_circle"
+               style="background-color: rgba(159,13,255,0.73);width: 7rem;height: 7rem;">
+            <div class="text-center text-monospace evaluate_text text-light" style="margin:2rem auto;">积极<br>进取</div>
+          </div>
+          <div class="rounded-circle circle evaluate_circle"
+               style="background-color: rgba(159,205,255,0.73);left:0;top:5rem;">
+            <div class="text-center text-monospace evaluate_text text-dark">认真<br>负责</div>
+          </div>
+          <div class="rounded-circle circle evaluate_circle"
+               style="background-color: rgba(255,241,50,0.67);width: 6rem;height: 6rem;left: 5rem;top:6rem;">
+            <div class="text-center text-monospace evaluate_text text-dark">团队<br>意识</div>
+          </div>
+          <div class="rounded-circle circle evaluate_circle"
+               style="background-color: rgba(220,53,69,0.6);width: 7rem;height: 7rem;left:0.5rem;top:10rem;">
+            <div class="text-center text-monospace evaluate_text text-light" style="margin:2rem auto;">贵在<br>坚持</div>
+          </div>
+          <div class="rounded-circle circle evaluate_circle"
+               style="background-color: rgba(52,206,87,0.67);width: 6rem;height: 6rem;left:10rem;top:11rem;">
+            <div class="text-center text-monospace evaluate_text text-light">勇于<br>创新</div>
+          </div>
+          <div class="rounded-circle circle evaluate_circle"
+               style="background-color: rgba(153,153,153,0.53);width: 6rem;height: 6rem;left:6rem;top:14rem;">
+            <div class="text-center text-monospace evaluate_text text-light">勤于<br>动手</div>
+          </div>
+        </div>
+      </div>
+      <!--个人资料-->
+      <div class="col-md-auto">
+        <div class="card me_card bg-transparent border-0" id="me_info">
+          <!--<div class="card-header h5" style="background: transparent;border: none;">个人资料</div>-->
+          <ul class="list-group list-group-flush allow_user_select">
+            <li class="list-group-item bg-transparent border-0">
+              <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span><span>And-ZJ</span>
+            </li>
+            <li class="list-group-item bg-transparent border-0">
+              <span>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span><span>男</span>
+            </li>
+            <li class="list-group-item bg-transparent border-0">
+              <span>出生年月：</span><span>1995-09</span></li>
+            <li class="list-group-item bg-transparent border-0">
+              <span>籍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贯：</span><span>江西南昌</span>
+            </li>
+            <li class="list-group-item bg-transparent border-0">
+              <span>毕业院校：</span><span>电子科技大学</span></li>
+            <li class="list-group-item bg-transparent border-0">
+              <span>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历：</span><span>硕士</span>
+            </li>
+            <li class="list-group-item bg-transparent border-0">
+              <span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</span><a class="text-warning" href="mailto:ZJ.Cosmos@gmail.com">ZJ.Cosmos@gmail.com</a>
+            </li>
+            <li class="list-group-item bg-transparent border-0">
+              <span>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：</span><span>182****5460</span>
+            </li>
+            <li class="list-group-item bg-transparent border-0">
+              <span>爱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好：</span><span>动漫</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--work定位-->
+<div class="container-fluid content_part" id="work">
+  <div class="container">
+    <div class="row content_part_head">
+      <div class="col-md-auto">
+        <span class="h2">&gt;&gt;&gt;&nbsp;</span><span class="h2">工作</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="VivaTimeline">
+          <dl>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">2016.07-2016.12</div>
+              <div class="events">
+                <div class="events-header">基于Java的图书管理系统 本科课程设计</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-auto">
+                      <img class="events-object img-fluid img-thumbnail" src="img/work_library_app.jpg" alt="图书管理系统手机APP图片"/>
+                    </div>
+                    <div class="events-desc">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="text-primary">项目介绍：</span>
+                          一个简单的管理图书、借阅图书的系统，该系统采用 Java Web 做服务器，浏览器前端做图书数据库管理，并制作 Android APP 向用户提供借阅功能。
+                        </li>
+                        <li class="list-group-item allow_user_select">
+                          <span class="text-primary">技术路线：</span>
+                          Java、SSH框架、Android、MySQL
+                        </li>
+                        <li class="list-group-item">
+                          <span class="text-primary">主要贡献：</span>
+                          完成了整个系统的设计和开发，从后台到前端，再到APP
+                        </li>
+                        <li class="list-group-item">
+                          <span class="text-primary">收获体会：</span>
+                          从零开始的 Java Web 开发。在本次课程设计，第一次学习了 Java、HTML、CSS、JS等语言、学习了 Android APP 的开发流程。在业余时间，也制作过其他APP，例如：一个
+                          <a class="text-success" href="https://github.com/And-ZJ/PasswordHelper"
+                             target="_blank">记账号密码的APP</a>。
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer">
+                  <!--123-->
+                </div>
+              </div>
+            </dd>
+            <dd class="pos-right clearfix">
+              <div class="circ"></div>
+              <div class="time">2016.12-2017.09</div>
+              <div class="events">
+                <div class="events-header">物联网数据采集系统 主要开发人员</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-auto">
+                      <img class="events-object img-fluid img-thumbnail" src="img/work_data_acquire.jpg" alt="物联网数据采集系统前端页面图片"/>
+                    </div>
+                    <div class="events-desc">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="text-primary">项目介绍：</span>
+                          该系统采集工作控制器（PLC）的过程数据并存储，通过工控组态软件远程监各个控制器的运行状态，由PLC采集器、数据采集器管理客户端、数据存储服务器构成
+                        </li>
+                        <li class="list-group-item allow_user_select">
+                          <span class="text-primary">技术路线：</span>Python、Flask、Bootstrap、MySQL、Redis、VPN
+                        </li>
+                        <li class="list-group-item">
+                          <span class="text-primary">主要贡献：</span>
+                          主要完成前端页面和后台Flask服务器的开发，读写MySQL、Redis数据库等操作、使用popen函数与Linux系统交互等。
+                        </li>
+                        <li class="list-group-item">
+                          <span class="text-primary">收获体会：</span>
+                          在这个项目里，第一次学习了Python，以及使用Python开发Flask服务器，对Python的数据结构、面向对象、面向切面等有一定的了解。
+                          并且更为深入的学习了前端开发，学会了一些响应式设计。
+                        </li>
+                        <li class="list-group-item">
+                          <span class="text-primary">遗憾之事：</span>
+                          本来有打算引入Docker的，研究了几天Docker之后，发觉有一些操作设计到本机，不适合在Docker中部署此项目，就放弃了。可能是我研究的不够深入吧。
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer">
+                  <!--123-->
+                </div>
+              </div>
+            </dd>
+            <dd class="pos-left clearfix">
+              <div class="circ"></div>
+              <div class="time">2017.12-2018.02</div>
+              <div class="events">
+                <div class="events-header">智能电网攻防研究 主要研究人员</div>
+                <div class="events-body">
+                  <div class="row">
+                    <div class="col-md-auto">
+                      <img class="events-object img-fluid img-thumbnail" src="img/work_electric_attack.jpg" alt="智能电网攻击软件图片"/>
+                    </div>
+                    <div class="events-desc">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="text-primary">项目介绍：</span>
+                          该项目依托于工业信息安全防护系统研究，旨在研究智能电网这一特殊工控环境下的网络攻防问题
+                        </li>
+                        <li class="list-group-item allow_user_select">
+                          <span class="text-primary">技术路线：</span>Linux、iptables、Wireshark、Python
+                        </li>
+                        <li class="list-group-item">
+                          <span class="text-primary">主要贡献：</span>
+                          主要研究了智能电网设备中的通信协议，并使用Python构造攻击数据包进行攻击。
+                        </li>
+                        <li class="list-group-item">
+                          <span class="text-primary">收获体会：</span>
+                          通过这个项目，学习了一些网络攻防方面的知识，学会了使用Wireshark抓包工具进行协议分析。同时也更能熟练的使用Python进行开发。
+                          在业余时候，还编写过动态爬虫，比如，
+                          <a class="text-success" href="https://github.com/And-ZJ/DynamicCrawler"
+                             target="_blank">爬取某动漫网站的漫画图片</a>。
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="events-footer"></div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--show定位-->
+<div class="container-fluid content_part" id="show">
+  <div class="container">
+    <div class="row content_part_head">
+      <div class="col-md-auto">
+        <span class="h2 text-dark">&gt;&gt;&gt;&nbsp;</span><span class="h2">展示</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-columns">
+        <div class="card" id="show_grade">
+          <img class="card-img-top img-thumbnail" src="img/show2.jpg" alt="取得成绩图片">
+          <div class="card-body allow_user_select">
+            <h6 class="card-title text-center">取得成绩</h6>
+            <ul class="list-group list-group-flush bg-transparent">
+              <li class="list-group-item">
+                <span>2014.12</span>&nbsp;<span>本科 人民一等奖学金</span>
+              </li>
+              <li class="list-group-item">
+                <span>2015.12</span>&nbsp;<span>本科 人民特等奖学金</span>
+              </li>
+              <li class="list-group-item">
+                <span>2016.12</span>&nbsp;<span>本科 人民二等奖学金</span>
+              </li>
+              <li class="list-group-item">
+                <span>2017.05</span>&nbsp;<span>本科 优秀团干称号</span>
+              </li>
+              <li class="list-group-item">
+                <span>2017.10</span>&nbsp;<span>研究生 学业一等奖学金</span>
+              </li>
+              <li class="list-group-item">
+                <span class="btn text-success" data-toggle="modal" data-target="#undergraduate_grade">本科成绩单</span>
+              </li>
+              <li class="list-group-item">
+                <span class="btn text-success" data-toggle="modal" data-target="#graduate_grade">研究生成绩单</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card" id="show_certificate">
+          <img class="card-img-top img-thumbnail" src="img/show3.jpg" alt="考得证书图片">
+          <div class="card-body allow_user_select">
+            <h6 class="card-title text-center">考得证书</h6>
+            <ul class="list-group list-group-flush bg-transparent">
+              <li class="list-group-item">
+                <span>2013.12</span>&nbsp;<span>CET4合格证书</span>
+              </li>
+              <li class="list-group-item">
+                <span>2014.09</span>&nbsp;<span>计算机二级C证书，成绩优秀</span>
+              </li>
+              <li class="list-group-item">
+                <span>2016.03</span>&nbsp;<span>计算机二级C++证书，成绩优秀</span>
+              </li>
+              <li class="list-group-item">
+                <span>2016.xx</span>&nbsp;<span>计算机二级Java证书，成绩优秀</span>
+              </li>
+              <li class="list-group-item">
+                <span>2016.xx</span>&nbsp;<span>汽车驾驶证C1</span>
+              </li>
+              <li class="list-group-item">
+                <span>2017.12</span>&nbsp;<span>CET6合格证书</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card" id="show_skill">
+          <img class="card-img-top img-thumbnail" src="img/show4.jpg" alt="习得技能图片">
+          <div class="card-body allow_user_select">
+            <h6 class="card-title text-center">习得技能</h6>
+            <ul class="list-group list-group-flush bg-transparent">
+              <li class="list-group-item">
+                <span class="text-primary">编程技能：</span>
+                <span>熟悉C、C++、Java、Python等语言，使用C、C++进行常用算法（如贪心、动态规划）设计</span>
+              </li>
+              <li class="list-group-item">
+                <span class="text-primary">前端技能：</span>
+                <span>熟悉HTML、CSS、JS等前端语言，熟悉jQuery、Bootstrap等框架，熟练使用Ajax、DOM等操作、简单Qt界面绘制、
+                <a class="text-success" href="https://github.com/And-ZJ/TranslateHelper" target="_blank">简单编写Chrome浏览器插件</a>
+                </span>
+              </li>
+              <li class="list-group-item">
+                <span class="text-primary">后端技能：</span>
+                <span>熟悉Python的Flask、Django框架，使用过Java的SSH框架，使用Websocket开发实时通信，使用Python编写爬虫，简单Qt网络通信，Makefile基本知识，数据库的基本操作</span>
+              </li>
+              <li class="list-group-item">
+                <span class="text-primary">其他技能：</span>
+                <span>Git常用操作，Docker基本知识，熟悉Linux操作系统，Linux下iptables的基本使用</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 本科成绩单界面 -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" id="undergraduate_grade">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="undergraduate_grade_title">本科成绩单</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/undergraduate_grade.jpg" alt="本科成绩单暂未上传">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 本科成绩单界面 -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" id="graduate_grade">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="graduate_grade_title">本科成绩单</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/graduate_grade.jpg" alt="研究生成绩单暂未上传">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--intent定位-->
+<!--暂无-->
+
+
+<!--contact定位-->
+<div class="container-fluid content_part" id="contact">
+  <div class="container">
+    <div class="row content_part_head">
+      <div class="col-md-auto">
+        <span class="h2 text-dark">&gt;&gt;&gt;&nbsp;</span><span class="h2">联系</span>
+      </div>
+    </div>
+    <div class="row h5">
+      <div class="col-md allow_user_select">
+        如有需要，您可以发送邮件至本人的工作邮箱：
+        <a class="text-success" href="mailto:ZJ.Cosmos@gmail.com">ZJ.Cosmos@gmail.com</a>&nbsp;
+        。期待与您的交流。
+      </div>
+    </div>
+    <div class="row h5">
+      <div class="col-md">
+        您还可以访问以下网址查看关于本人的其他内容：
+      </div>
+    </div>
+    <div class="row justify-content-center other_site">
+      <div class="col-md-auto">
+        <div class="card bg-transparent border-0 site">
+          <img class="card-img-top img-thumbnail" src="img/csdn_qrcode.png" alt="CSDN博客二维码图片">
+          <p class="card-text text-center h5 site_link">
+            <a class="text-success" href="https://blog.csdn.net/and_zj" target="_blank">CSDN博客</a></p>
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <div class="card bg-transparent border-0 site">
+          <img class="card-img-top img-thumbnail" src="img/github_qrcode.png" alt="Github个人主页二维码图片">
+          <p class="card-text text-center h5 site_link" style="padding-top: 10px;">
+            <a class="text-success" href="https://github.com/and-zj" target="_blank">Github</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--底部内容-->
+<div class="navbar navbar-expand-lg" id="navbar_bottom">
+  <div class="container container-fluid">
+    <div class="row align-self-center">
+      <div class="col-md-auto align-self-center">
+         <span class="text-white navbar-text">Designer:
+           <a href="https://and-zj.github.com" target="_blank">And-ZJ</a></span>
+      </div>
+      <div class="col-md-auto align-self-center">
+         <span class="text-white navbar-text">Thanks:
+           <a href="https://github.com/" target="_blank">GitHub</a>
+           &nbsp;
+           <a href="https://html5boilerplate.com/" target="_blank">HTML5Boilerplate</a>
+           &nbsp;
+           <a href="https://v4.bootcss.com/" target="_blank">Bootstrap</a>
+           &nbsp;
+           <a href="http://www.htmleaf.com/jQuery/Layout-Interface/201605173478.html"
+              target="_blank">jQuery之家</a>
+         </span>
+      </div>
+      <div class="col-md-auto align-self-center">
+        <span class="text-white navbar-text">Copyright © And-ZJ 2018-07-28</span>
+      </div>
+      <div class="col-md-auto align-self-center this_site_qrcode">
+        <img src="img/github_homepage_qrcode.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 页面结束 -->
+
+<!--引入JS文件-->
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"-->
+<!--integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>-->
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script src="bootstrap-4.1.3/js/bootstrap.bundle.js"></script>
+<script src="bootstrap-4.1.3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.eeyellow.Timeline.js"></script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<!--<script>-->
+<!--window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;-->
+<!--ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')-->
+<!--</script>-->
+<!--<script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
+<script>
+  $(document).ready(function () {
+    $('.VivaTimeline').vivaTimeline({
+      carousel: true,
+      carouselTime: 5000
+    });
+  });
+</script>
 </body>
 
 </html>
