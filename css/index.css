@@ -41,6 +41,7 @@
 .content_part_head {
   padding-top: 1rem;
   padding-bottom: 4rem;
+  display: none;
 }
 
 /*重写  引用名人名言*/
@@ -104,7 +105,7 @@
 
 /*me定位*/
 #me {
-  background-color: #38A5DB;
+  background-color: #03a9f4;
   color: white;
   /*display: none;*/
 }
@@ -158,12 +159,25 @@
 
 /*work定位*/
 #work {
-  background-color: #b17a5b;
+  background-color: #9575CD;
   /*display: none;*/
+}
+@media screen and  (max-width: 800px) {
+  #work div.img_contain {
+    height:300px;
+  }
+}
+#work .img_contain{
+  height:500px;
+  width: auto;
+  text-align: center;
 }
 
 #work img.events-object{
   border: 1px solid red;
+  padding-bottom: 0.25rem;
+  height:100%;
+  width: auto;
 }
 
 #work .list-group-item {
@@ -198,7 +212,7 @@
 
 /*contact 定位*/
 #contact {
-  background-color: rgba(255, 138, 128, 1);
+  background-color: #FFD54f;
 }
 
 /*contact 其他链接*/
